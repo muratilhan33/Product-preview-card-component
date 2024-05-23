@@ -1,0 +1,139 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #f2ebe3;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat"
+}
+
+.component {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2.5%;
+    overflow: hidden;
+    max-width: 700px;
+}
+
+
+
+.product-container {
+    display: flex;
+    justify-content: start;
+    background-color: #fff;
+    gap: 3.5rem;
+}
+
+.product-image.mobile {
+    display: none;
+}
+
+.product-info {
+    width: 50%;
+    height: 100%;
+    padding-right: 3.5rem;
+}
+
+
+
+.product-image {
+    width: 50%;
+}
+
+.info h3 {
+    color: #6c7289;
+    letter-spacing: 0.5rem;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+.info .head {
+    display: block;
+    color: #1c232b;
+    font-size: 4rem;
+    padding-top: 2rem;
+    font-family: Fraunces;
+}
+
+.info .description {
+    color: #6c7289;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+.info .price {
+    display: flex;
+    color: #3c8067;
+    font-size: 4rem;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.info .new {
+    font-family: Fraunces;
+}
+
+.info .old {
+    color: #6c7289;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.btn-add {
+    background-color: #3c8067;
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-add .icon {
+    color: #fff;
+}
+
+.btn-add:hover {
+    cursor: pointer;
+    background-color: #1A4031;
+}
+
+@media(max-width: 1400px) {
+    .component {
+        border-radius: 1rem;
+        background-color: #fff;
+    }
+
+    .product-container {
+        display: inline;
+    }
+
+    .product-image {
+        display: none;
+    }
+
+    .product-image.mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .product-info {
+        display: block;
+        padding-left: 2rem;
+        width: auto;
+        padding-right: 2rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
